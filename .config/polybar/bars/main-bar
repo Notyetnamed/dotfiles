@@ -1,0 +1,29 @@
+[bar/main]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 40
+top = true
+
+background = ${color.background_dark}
+foreground = ${color.foreground}
+
+border-size = 0
+
+modules-left = i3
+modules-right = separator-modules pulseaudio battery separator-date date  separator-tray
+
+cursor-click = pointer
+tray-position = right
+tray-maxsize = 40
+tray-background = ${color.background_lightest}
+tray-scale = 1
+
+enable-ipc = true
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+font-0 = Roboto:style=Light:size=20;5
+font-1 = FontAwesome5Free:style=Solid:size=10;3
+font-2 = FontAwesome5Free:style=Regular:size=10;3
+font-3 = FontAwesome5Brands:style=Regular:size=10;3
+font-4 = FontAwesome5Free:style=Solid:size=60;13

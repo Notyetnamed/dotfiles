@@ -1,0 +1,20 @@
+[module/separator-tray]
+type = custom/text
+content = 
+content-font = 5
+content-foreground = ${color.background_lightest}
+content-background = ${color.background_light}
+
+[module/separator-date]
+type = custom/text
+content = 
+content-font = 5
+content-foreground = ${color.background_light}
+content-background = ${color.background}
+
+[module/separator-modules]
+type = custom/text
+content = 
+content-font = 5
+content-foreground = ${color.background}
+content-background = ${color.background_dark}

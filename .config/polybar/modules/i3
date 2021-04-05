@@ -1,0 +1,36 @@
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+enable-scroll = false
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4
+ws-icon-4 = 5
+ws-icon-5 = 6
+ws-icon-6 = 7
+ws-icon-7 = 8
+ws-icon-8 = 9
+ws-icon-9 = 0
+
+label-focused = %name%
+label-focused-foreground = ${color.foreground_light}
+label-focused-background = ${color.selection}
+label-focused-padding = 2
+
+label-unfocused = %name%
+label-unfocused-foreground = ${color.foreground}
+label-unfocused-background = ${color.background_light}
+label-unfocused-padding = 2
+
+label-urgent = %name%
+label-urgent-foreground = ${color.foreground}
+label-urgent-background = ${color.background_urgent}
+label-urgent-padding = 2
+
+label-visible = %name%
+label-visible-foreground = ${color.foreground}
+label-visible-background = ${color.background_light}
+label-visible-padding = 2

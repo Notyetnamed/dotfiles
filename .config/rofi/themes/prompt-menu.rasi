@@ -1,0 +1,61 @@
+@import "options.rasi"
+* {
+
+	background-color: transparent;
+  text-color: @foreground;
+  font: "Roboto Light 16";
+}
+
+#window {
+	fullscreen:true;
+	background-color: @transparent-background;
+	transparent: "real";
+  children: [dummy1, hdum, dummy2 ];
+}
+
+#hdum {
+orientation: horizontal;
+children: [ dummy5, mainbox, dummy6 ];
+}
+
+#mainbox {
+	margin: 11% 11.3%;
+	children: [ inputbar, horibox ];
+}
+
+#inputbar {
+  background-color: @background;
+  margin: 0 0 -3px 0;
+  children: [ prompt ];
+}
+
+#prompt {
+  padding: 0.5em 0.5em 0 0.5em;
+  background-color: @background;
+}
+
+#horibox {
+  padding: 0.5em;
+  background-color: @background;
+  children: [ listview ];
+}
+
+#listview {
+  layout: horizontal;
+  spacing: 0.5em;
+  lines: 2;
+  background-color: @background;
+}
+
+#element {
+	width: 7.5em;
+  font: "FontAwesome5Free Solid 100";
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  padding: 1em;
+  background-color: @background-light;
+}
+#element.selected {
+  background-color: @accent;
+  text-color: @background;
+}

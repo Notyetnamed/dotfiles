@@ -1,0 +1,10 @@
+
+[module/date]
+type = internal/date
+
+time = %H:%M
+time-alt = %y-%m-%d
+label = %time%
+label-padding = 2
+label-foreground = ${color.foreground_light}
+label-background = ${color.background_light}

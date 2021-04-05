@@ -1,0 +1,18 @@
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = false
+interval = 5
+click-right = pavucontrol
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = ${color.background}
+format-volume-padding = 2
+
+label-muted-foreground = ${color.background_urgent}
+label-muted-background = ${color.background}
+ramp-volume-foreground = ${color.foreground_light}
+
+label-muted = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 =  

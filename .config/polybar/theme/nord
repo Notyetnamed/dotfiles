@@ -1,0 +1,9 @@
+[color]
+background_lightest = #4c566a
+background_light =    #434C5E
+background =          #3B4252
+background_dark =     #2E3440
+background_urgent =   #D08770
+selection =           #5E81AC
+foreground =          #9FABAD
+foreground_light =    #D8DEE9

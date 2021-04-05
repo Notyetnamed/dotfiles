@@ -1,0 +1,34 @@
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+
+format-full = <ramp-capacity> <label-full>
+format-full-background = ${color.background}
+format-full-padding = 2
+label-full = %percentage%%
+
+format-charging = <ramp-capacity> <label-charging>
+format-charging-background = ${color.background}
+format-charging-padding = 2
+label-charging = %percentage%% 
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-background = ${color.background}
+format-discharging-padding = 2
+label-discharging = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-0-foreground = #bf616a
+ramp-capacity-1-foreground = #bf616a
+ramp-capacity-2-foreground = #d08770
+ramp-capacity-3-foreground = #ebcb8b
+ramp-capacity-4-foreground = #a3be8c
+
+

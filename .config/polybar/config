@@ -1,0 +1,16 @@
+
+;== THEME ==========================================
+include-file = $HOME/.config/polybar/theme/nord
+
+;== BARS ===========================================
+include-file = $HOME/.config/polybar/bars/main-bar
+include-file = $HOME/.config/polybar/bars/secondary-bar
+
+;== MODULES ========================================
+include-file = $HOME/.config/polybar/modules/i3
+include-file = $HOME/.config/polybar/modules/pulseaudio
+include-file = $HOME/.config/polybar/modules/date
+include-file = $HOME/.config/polybar/modules/battery
+include-file = $HOME/.config/polybar/modules/separators
+;===================================================
+

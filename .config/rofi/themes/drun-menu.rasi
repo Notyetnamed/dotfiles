@@ -1,0 +1,73 @@
+
+configuration {
+  show-icons: true;
+  icon-theme: "NordArc";
+  font: "Roboto Light 14";
+}
+
+@import "options.rasi"
+
+* {
+  text-color: @foreground;
+}
+
+#window {
+	transparency: "real";
+	background-color: @transparent-background;
+	fullscreen: true;
+	  children: [ mainbox ];
+}
+
+#mainbox {
+	margin: 40%;
+	background-color: @background;
+	children: [ inputbar, horibox ];
+}
+
+#inputbar {
+  background-color: @background;
+  margin: 0 0 -4px 0;
+  children: [textbox-prompt, entry];
+}
+
+#textbox-prompt {
+	  background-color: @background;
+    text-color: @accent;
+    str: "Run:";
+    expand: false;
+    margin: 3px;
+  	padding: 5px;
+   }
+
+#entry {
+  background-color: @background;
+  margin: 3px;
+  padding: 5px;
+  text-color: @accent;
+}
+
+#horibox {
+  padding: 5px;
+  background-color: @background;
+  children: [ listview ];
+
+}
+
+#listview {
+  layout: vertical;
+  spacing: 5px;
+  lines: 15;
+  background-color: @background;
+}
+
+#element {
+  padding: 10;
+  background-color: @background-light;
+}
+#element.icon {
+  padding: 20px;
+}
+#element.selected {
+  background-color: @accent;
+  text-color: @background;
+}
