@@ -6,36 +6,38 @@
 }
 
 #window {
-	transparency: "real";
+  transparency: "real";
   background-color: @transparent-background;
-	fullscreen: true;
-  children: [ dummy1, dummy2, hdum, dummy3, dummy4 ];
+  fullscreen: true;
+  // children: [ dummy1, dummy2, hdum, dummy3, dummy4 ];
+  children: [ horibox ];
 }
 
 #hdum {
-orientation: horizontal;
-children: [ dummy5, horibox, dummy6 ];
+  orientation: horizontal;
+  children: [ dummy5, horibox, dummy6 ];
 }
 
 
 
 #horibox {
-	background-color: @background;
-	margin: 4.8% 0% 5% 0.3%;
+  background-color: @background;
+  // margin: 4.8% 0% 5% 0.3%;
+  margin: 43.5% 33.5%;
   padding: 0.5%;
   children: [ listview ];
 }
 
 #listview {
-	fixed-height: true;
+  fixed-height: true;
   layout: horizontal;
   spacing: 0.5%;
   lines: 5;
 }
 
 #element {
-	width: 6%;
-	font: "FontAwesome5Free Solid 85";
+  width: 6%;
+  font: "FontAwesome5Free Solid 85";
   horizontal-align: 0.5;
   vertical-align: 0.5;
   padding: 2% 0%;
