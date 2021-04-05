@@ -64,8 +64,8 @@ Create a folder to store symlinks. Make sure it is added to your $PATH!
 ```mkdir ~/.local/bin```  
 create the links  
 ```
-ln -s ~/.config/rofi/scripts/power-menu.sh ~/.local/bin/powermenu
-ln -s ~/.config/rofi/scripts/prompt-menu.sh ~/.local/bin/promptmenu
-ln -s ~/.config/rofi/scripts/drun-menu.sh ~/.local/bin/drunmenu
+ln -s ~/.config/rofi/scripts/power-menu.sh ~/bin/powermenu
+ln -s ~/.config/rofi/scripts/prompt-menu.sh ~/bin/promptmenu
+ln -s ~/.config/rofi/scripts/drun-menu.sh ~/bin/drunmenu
 ```
 
