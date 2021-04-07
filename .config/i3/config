@@ -59,6 +59,9 @@ bindsym $mod+d exec --no-startup-id drunmenu
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# printscreen
+bindsym Print exec --no-startup-id flameshot gui
+
 #AUDIO BUTTONS
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -88,6 +91,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 # Bluetooth
 exec --no-startup-id blueman-applet
+# Flameshot
+exec --no-startup-id flameshot
+
 #=================================
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -95,10 +101,12 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id  picom --config $HOME/.config/picom/picom.conf
 # wallpaper manager
 exec --no-startup-id nitrogen --restore
-
+# xinput
+exec --no-startup-id $HOME/.config/misc/xinput_custom.sh
+# xrandr
+exec --no-startup-id $HOME/.config/misc/xrandr_custom.sh
 
 #== MISC CONFIG ========================================================================
-
 font pango:Roboto:style=Light 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
