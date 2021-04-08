@@ -23,7 +23,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+space floating toggle
 
 # move output to next layout
-bindsym $mod+Tab move workspace to output above
+bindsym $mod+Tab move workspace to output up
 
 # change focus
 bindsym $mod+Left focus left
