@@ -23,7 +23,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 font-0 = Roboto:style=Light:size=20;5
-font-1 = FontAwesome5Free:style=Solid:size=10;3
-font-2 = FontAwesome5Free:style=Regular:size=10;3
-font-3 = FontAwesome5Brands:style=Regular:size=10;3
+font-1 = FontAwesome5Free:style=Solid:size=20;5
+font-2 = FontAwesome5Free:style=Regular:size=20;5
+font-3 = FontAwesome5Brands:style=Regular:size=20;5
 font-4 = FontAwesome5Free:style=Solid:size=60;13
