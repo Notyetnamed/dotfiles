@@ -36,28 +36,45 @@ checkout
 
 [Source](https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b)
 
-## PPA
-i used the speed-ricer **[ppa](https://github.com/regolith-linux/speed-ricer)**
-`sudo add-apt-repository -y ppa:kgilmer/speed-ricer`
 
-## Install
-after adding the ppa install:
-#### APT
-```sudo apt install i3-gaps polybar rofi dunst picom flameshot nordic paper-icon-theme fonts-source-code-pro curl```
 
-#### i3lock-color
-This adds an minimal blurred lockscreen  
-**[i3lock-color](https://github.com/Raymo111/i3lock-color)**
 
-#### Font Awesome
-Used for rofi menus and more  
+## Installation
+
+### window manager
+add regolith ppa
+´´´sudo add-apt-repository -y ppa:regolith-linux/stable´´´
+ install i3-gaps
+ ´´´sudo apt install i3-gaps´´´
+´´´
+sudo apt update 
+sudo apt upgrade
+sudo apt dist-upgrade
+´´´ 
+
+### Configure upgrader
+Configure the release upgrader. 
+Open and edit the /etc/update-manager/release-upgrades file and ensure that the Prompt variable is set to normal.
+
+```sudo do-release-upgrade```
+
+### Installation cool stuff
+ only for ubuntu 20.10 or later!
+```sudo apt install polybar rofi picom blueman autorandr```
+
+TODO: make sure we got everything.
+TODO: lightDM guide
+
+
+#### Fonts
+Used for rofi menus and more
 **[font-awesome 5](https://fontawesome.com/download)**
 
-###### is this even needed?  
-apply nordic widget theme, Source Code pro 12 and paper icon theme in lxappearance  
-###### -----------------
+Main font 
+**[Roboto Light](https://fonts.google.com/specimen/Roboto)**
 
-
+Mono-font, used for terminals ++
+**[Roboto Mono Light](https://fonts.google.com/specimen/Roboto+Mono)**
 
 ## Symlink scripts
 Create a folder to store symlinks. Make sure it is added to your $PATH!  

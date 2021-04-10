@@ -1,0 +1,6 @@
+#! /bin/bash
+
+##this will run after autorandr switches display configuration
+notify-send -i display "Display profile" "$AUTORANDR_CURRENT_PROFILE"
+~/.config/polybar/launch.sh &
+nitrogen --restore & 
