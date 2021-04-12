@@ -60,7 +60,7 @@ Open and edit the /etc/update-manager/release-upgrades file and ensure that the 
 
 ### Installation cool stuff
  only for ubuntu 20.10 or later!
-```sudo apt install polybar rofi picom blueman autorandr```
+```sudo apt install polybar rofi picom blueman autorandr flameshot```
 
 TODO: make sure we got everything.
 TODO: lightDM guide

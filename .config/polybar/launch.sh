@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Terminate already running bar instances
 killall -q polybar
@@ -7,12 +7,13 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 0.5; done
 
 # Launch 
-MONITOR=$(polybar -m | awk -F'[:+]' '/primary/{print $1}');
-polybar -c  ~/.config/polybar/config --reload main &
-echo launching main on $MONITOR
+export MONITOR=$(polybar -m | awk -F'[:+]' '/primary/{print $1}');
+polybar -c  ~/.config/polybar/config main &
+notify-send polybar "launching main bar on $MONITOR"
 
 for m in $(polybar -m | awk -F'[:+]' !'/primary/{print $1}'); do
-	MONITOR=$m polybar -c  ~/.config/polybar/config --reload secondary &
-	echo launching secondary on $MONITOR
+	export MONITOR=$m;
+	polybar -c  ~/.config/polybar/config secondary &
+	notify-send polybar "launching secondary bar on $MONITOR"
 done
 

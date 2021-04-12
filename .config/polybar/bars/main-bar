@@ -1,5 +1,6 @@
 [bar/main]
 monitor = ${env:MONITOR:}
+wm-restack = i3
 width = 100%
 height = 40
 top = true
